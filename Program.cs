@@ -3,7 +3,6 @@
 Dictionary<char, int> dicRecaudacion = new Dictionary<char, int>();
 string respuestaUser;
 
-
 respuestaUser = ValidarRespuesta();
 while(respuestaUser!="FIN")
 {
@@ -22,7 +21,6 @@ while(respuestaUser!="FIN")
 void Recaudacion()
 {
     char curso = IngresarChar("Ingrese el curso a recaudar:");
-
     while(dicRecaudacion.Keys.Contains(curso))
     {
         curso = IngresarChar("El curso ya fue ingresado, ingrese otro curso a recaudar:");
